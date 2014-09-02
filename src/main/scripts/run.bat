@@ -1,0 +1,1 @@
+java -cp weixin-0.0.1.jar;lib\* weixin.Boot
