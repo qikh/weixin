@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>weixin</groupId>
+	<groupId>qikh.github.io</groupId>
 	<artifactId>weixin</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>weixin</name>
@@ -42,6 +42,19 @@
 				</configuration>
 			</plugin>
 
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>weixin.Boot</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>

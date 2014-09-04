@@ -1,3 +1,3 @@
 #/bin/bash
 
-java -cp weixin-0.0.1.jar.jar:lib\* weixin.Boot
+java -cp weixin-1.0.0.jar:lib/* weixin.Boot

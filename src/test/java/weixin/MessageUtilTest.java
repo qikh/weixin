@@ -12,9 +12,10 @@ public class MessageUtilTest {
 
 	@Test
 	public void testSignature() {
-		String signature = "DB70414D5F035883146F53021065C6895D2A0AE2";
+		String signature = "494687A49E66C9B54D7CF5268C3AD9D91F07B18E";
 		String timestamp = "1409562117";
 		String nonce = "103815410";
+		Weixin.configure("/", "myweixin", 80);
 		assertEquals(Weixin.checkSignature(signature, timestamp, nonce),
 				Boolean.TRUE);
 	}
