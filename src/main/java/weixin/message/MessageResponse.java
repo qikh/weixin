@@ -115,8 +115,8 @@ public class MessageResponse {
     }
 
     public String toXml() {
-        if (this.getToUserName() == null || this.getFromUserName() == null || this.getCreateTime() == null
-                || this.getMsgType() == null) {
+        if (this.getToUserName() == null || this.getFromUserName() == null
+                || this.getCreateTime() == null || this.getMsgType() == null) {
             return null;
         }
 
@@ -270,7 +270,8 @@ public class MessageResponse {
 
                     if (article.getDescription() != null) {
                         Element descriptionElement = doc.createElement("Description");
-                        descriptionElement.appendChild(doc.createCDATASection(article.getDescription()));
+                        descriptionElement.appendChild(doc.createCDATASection(article
+                                .getDescription()));
                         itemElement.appendChild(descriptionElement);
                     }
 

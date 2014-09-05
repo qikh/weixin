@@ -4,5 +4,5 @@ import weixin.event.MenuLinkEvent;
 import weixin.message.MessageResponse;
 
 public interface MenuLinkEventHandler {
-	public void handle(MenuLinkEvent msg, MessageResponse res);
+    public void handle(MenuLinkEvent msg, MessageResponse res);
 }

@@ -1,4 +1,5 @@
 package weixin.utils;
+
 import static spark.Spark.*;
 
 public class Http {
@@ -22,43 +23,43 @@ public class Http {
     public static final int OVERLOADED = 502;
     public static final int GATEWAY_TIMEOUT = 503;
 
-	public static void created() {
-		halt(CREATED);
-	}
-	
-	public static void created(String message) {
-		halt(CREATED, message);
-	}
-	
-	public static void badrequest() {
-		halt(BAD_REQUEST);
-	}
-	
-	public static void badrequest(String message) {
-		halt(BAD_REQUEST, message);
-	}
-	
-	public static void notfound() {
-		halt(NOT_FOUND);
-	}
-	
-	public static void notfound(String message) {
-		halt(NOT_FOUND, message);
-	}
-	
-	public static void notmodified() {
-		halt(NOT_MODIFIED);
-	}
-	
-	public static void notmodified(String message) {
-		halt(NOT_MODIFIED, message);
-	}
-	
-	public static void conflict() {
-		halt(CONFLICT);
-	}
-	
-	public static void conflict(String message) {
-		halt(CONFLICT, message);
-	}
+    public static void created() {
+        halt(CREATED);
+    }
+
+    public static void created(String message) {
+        halt(CREATED, message);
+    }
+
+    public static void badrequest() {
+        halt(BAD_REQUEST);
+    }
+
+    public static void badrequest(String message) {
+        halt(BAD_REQUEST, message);
+    }
+
+    public static void notfound() {
+        halt(NOT_FOUND);
+    }
+
+    public static void notfound(String message) {
+        halt(NOT_FOUND, message);
+    }
+
+    public static void notmodified() {
+        halt(NOT_MODIFIED);
+    }
+
+    public static void notmodified(String message) {
+        halt(NOT_MODIFIED, message);
+    }
+
+    public static void conflict() {
+        halt(CONFLICT);
+    }
+
+    public static void conflict(String message) {
+        halt(CONFLICT, message);
+    }
 }

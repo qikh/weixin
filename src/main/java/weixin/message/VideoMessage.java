@@ -1,16 +1,16 @@
 package weixin.message;
 
-public class VideoMessage extends Message{
-	private String mediaId;
-	private String thumbMediaId;
+public class VideoMessage extends Message {
+    private String mediaId;
+    private String thumbMediaId;
 
     public String getMediaId() {
-		return mediaId;
-	}
+        return mediaId;
+    }
 
-	public void setMediaId(String mediaId) {
-		this.mediaId = mediaId;
-	}
+    public void setMediaId(String mediaId) {
+        this.mediaId = mediaId;
+    }
 
     public String getThumbMediaId() {
         return thumbMediaId;
